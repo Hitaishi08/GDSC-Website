@@ -1,0 +1,1949 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Righteous&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Patua+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Noto+Sans+KR:wght@100..900&family=Patua+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    width: 100vw;
+    height: 8vh;
+    background-color: rgb(255, 255, 255);
+    color: rgb(78, 78, 113);
+    display: flex;
+    justify-content: right;
+    padding-top: 0.8%;
+    box-sizing: border-box;
+    z-index: 1000;
+    position: fixed;
+}
+
+#bars{
+    font-size: 2rem;
+    margin-right: 2%;
+}
+.logo{
+    width: 2.5vw;
+    height: 5vh;
+    /* background-color: blue; */
+    background-image: url('./images/GDSC-logo.png');
+    background-size: contain;
+    margin-right: 33%;
+    background-repeat: no-repeat;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+
+ul i{
+    color: rgb(78, 78, 113);
+}
+
+.navbar ul li{
+    padding-top: 1%;
+    margin-right: 4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+    position: relative;
+    cursor: pointer;
+}
+.nav-items::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(78, 78, 113);
+    bottom: 10px;
+    left: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+}
+.nav-items:hover::after{
+    width: 100%;
+}
+
+.search{
+    width: 15vw;
+    height: 5vh;
+    margin-right: 7%;
+}
+
+.hero-section{
+    width: 100vw;
+    height: 97vh;
+    background-image:url('./images/hero-sec2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+    overflow-y: hidden;
+    position: relative;
+}
+
+.navigation{
+    height: 100vh;
+    width: 17vw;
+    background-color: rgb(72, 72, 72);
+    position: absolute;
+    right: 0;
+    top:56px;
+    display: none;
+    z-index: 100;
+}
+.navigation h2{
+    text-align: center;
+    font-family: "Righteous", sans-serif;
+    padding-top: 5%;
+}
+.navigation ul{
+    list-style: none;
+    text-align: center;
+}
+
+.navigation ul i{
+    color: #FFFFFF;
+}
+
+.navigation ul li{
+    padding-top: 10%;
+    font-family: "Poppins", sans-serif;font-size: 1rem;
+    cursor: pointer;
+}
+.hero-heading{
+    text-align: left;
+    padding-top: 12%;
+    font-size: 8rem;
+    font-weight: 800;
+    font-family: "Righteous", sans-serif;
+    background: linear-gradient(to right , rgb(0, 0, 0),rgb(42, 40, 40), rgb(5, 56, 138));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.864);
+    padding-left: 5%;
+    line-height: 3px;
+
+}
+.hero-heading2{
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: "Righteous", sans-serif;
+    background: linear-gradient(to right , rgb(0, 0, 0), rgb(78, 141, 244));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(4, 121, 255, 0.738);
+    padding-left: 5%;
+}
+
+.tagline{
+    font-family: "Poppins", sans-serif;font-size: 1rem;
+    color: rgb(56, 55, 55);
+    padding-left: 5%;
+}
+
+input{
+    border: 2px solid rgb(81, 81, 81);
+    font-size: 0.7rem;
+    padding-left: 1%;
+    border-radius: 10px;
+}
+.custom-shape-divider-bottom-1722373099 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 100;
+}
+
+.custom-shape-divider-bottom-1722373099 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    z-index: 100;
+}
+
+.custom-shape-divider-bottom-1722373099 .shape-fill {
+    fill: #FFFFFF;
+    z-index: 100;
+}
+
+.join-btn{
+    width: 10vw;
+    height: 5vh;
+    background-color: transparent;
+    color: #403f3f;
+    font-weight: 600;
+    border-radius: 20px;
+    border-style: 1px solid black;
+    margin-top: 2%;
+    margin-left: 20%;  
+}
+
+.join-btn:hover{
+    
+}
+
+/* -------------------------------------Section 2-------------------------------- */
+
+.section-2{
+    width: 100vw;
+    height: 35vw;
+    z-index: 100;
+}
+
+ .heading3{
+    text-align: center;
+    padding-top: 2%;
+    color: black;
+    font-family: "Black Ops One", system-ui;
+    font-size: 4rem;
+    background: linear-gradient(to right , rgb(255, 255, 255), rgb(33, 33, 33));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+ }
+
+ .container{
+    width: 80vw;
+    height: 45vh;
+    /* background-color: cadetblue; */
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .card{
+    width: 17vw;
+    height: 45vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.5s linear;
+ }
+
+ .visual{
+    width: 14vw;
+    height: 25vh;
+    /* background-color: blueviolet; */
+    font-size: 10rem;
+    margin: auto;
+    text-align: center;
+ }
+
+ .info h1{
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: "Poppins", sans-serif;
+ }
+
+ .info p{
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    padding-top: 2%;
+ }
+
+ .card:hover{
+    transform: scale(1.2);
+ }
+
+
+ /* ----------------------------------section 3--------------------------------- */
+
+.section-3{
+    width: 100vw;
+    height: 95vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.container2{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.detail{
+    width: 45vw;
+    height: 80vh;
+    /* background-color: aqua; */
+    margin-top: 13%;
+}
+.images{
+    width: 42vw;
+    height: 80vh;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.item{
+    width: 20vw;
+    height: 38vh;
+    background-color: #FFFFFF;
+    margin-top: 3%;
+    margin-left: 3%;
+    background-image: url('https://images.unsplash.com/photo-1638029202288-451a89e0d55f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item1{
+    border-radius: 57% 43% 57% 43% / 50% 69% 31% 50% ;
+}
+
+.item2{
+    border-radius: 56% 44% 39% 61% / 68% 50% 50% 32% ;
+    background-image: url('https://plus.unsplash.com/premium_photo-1664299935896-8b7638a6f105?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item3{
+    border-radius: 34% 66% 49% 51% / 53% 23% 77% 47% ;
+    background-image: url('https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item4{
+    border-radius: 68% 32% 62% 38% / 25% 51% 49% 75% ;
+    background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.detail h1{
+    text-align: center;
+    font-family: "Black Ops One", system-ui;
+    font-size: 2rem;
+}
+
+.detail p{
+    padding-top: 5%;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 25px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+/* -----------------------------------section 4----------------------------------------- */
+
+.section4{
+    width: 100vw;
+    height: 170vh;
+    background-color: rgb(215, 226, 250);
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section4 h1{
+    font-family: "Black Ops One", system-ui;
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 10%;
+    color: #FFFFFF;
+}
+.container3{
+    width: 55vw;
+    height: 110vh;
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.card-container{
+    width:55vw;
+    height: 110vh;
+    background-color: cadetblue;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.event{
+    width: 20vw;
+    height: 50vh;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 50%;
+    transform: translate(20,-10%);
+    background-position: 50% 50%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+
+.card-container .event:nth-child(1),
+.card-container .event:nth-child(2)
+{
+    top: 0;
+    left:0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-container .event:nth-child(3)
+{
+    left: 50%;
+}
+
+.card-container .event:nth-child(4)
+{
+    left: calc(50% + 110px);
+}
+
+.card-container .event:nth-child(5)
+{
+    left: calc(50% + 220px);
+}
+
+.card-container .event:nth-child(n+6)
+{
+    left: calc(50% + 330px);
+}
+.button{
+    width: 60vw;
+    height: 10vh;
+    /* background-color: chartreuse; */
+    padding-left: 35%;
+    padding-top: 1.5%;
+}
+
+button{
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    border-radius: 10%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    border: 1px black solid;
+}
+.custom-shape-divider-top-1722417618 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1722417618 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1722417618 .shape-fill {
+    fill: #ffffffec;
+}
+
+/* ----------------------------------section5------------------------------------------------------ */
+
+.section5{
+    width: 100vw;
+    height:200vh;
+    background-color: rgb(2, 7, 25);
+    padding-top: 5%;
+    position: relative;
+}
+
+.section5 h1{
+    color: white;
+    font-family: "Black Ops One", system-ui;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 10%;
+}
+
+.team1{
+    width: 80vw;
+    height: 60vh;
+    /* background-color: aliceblue; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.team2{
+    width: 80vw;
+    height: 60vh;
+    /* background-color: rgb(104, 150, 191); */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.mem{
+    width: 25vw;
+    height: 50vh;
+    /* background-color: rgb(255, 255, 255); */
+    position: relative;
+    border-radius: 20px;
+}
+
+.profile{
+    width: 20vw;
+    height: 43vh;
+    background-color: rgb(144, 143, 201);
+    border-radius: 50%;
+    position: absolute;
+    top: -130px;
+    left: 35px;
+    font-size: 13rem;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.mem-info{
+    margin-top: 50%;
+}
+
+.mem-info .name{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    line-height: 5px;
+    font-size: 1.5rem;
+}
+
+.mem-info p{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+}
+
+.custom-shape-divider-bottom-1722442381 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1722442381 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1722442381 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* ---------------------------section 4--------------------------------------------------- */
+
+.section6{
+    width: 100%;
+    height: 80vh;
+    background-color: #ffffffec;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.feedback{
+    width: 50vw;
+    height: 60vh;
+    /* background-color: aqua; */
+    margin-top: 8%;
+}
+
+form{
+    width: 25vw;
+    height: 65vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding-top: 3%;
+    padding-left: 1%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+label{
+    padding-left: 6%;
+    padding-top: 5%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+form input
+{
+    width: 20vw;
+    height: 5vh;
+    margin-left: 6%;
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+form textarea{
+    margin-left: 6%;
+    width: 20vw;
+    margin-top: 2%;
+}
+
+form button{
+    border: none;
+    margin-left: 27%;
+    margin-top: 5%;
+    background-color: rgb(112, 112, 235);
+    font-family: "Poppins", sans-serif;
+}
+
+.feedback h1{
+    font-size: 6rem;
+    font-family: "Black Ops One", system-ui;
+    text-align: center;
+    line-height: 2.5cm;
+    padding-top: 3%;
+}
+
+.feedback p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(1, 1, 27);
+}
+.footer{
+    width: 100%;
+    height: 30vh;
+    /* background-color: rgb(1, 1, 27); */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-heading
+{
+    width:30vw;
+    height: 20vh;
+    /* background-color: aquamarine; */
+    margin-top: 4%;
+    margin-left: 10%;
+}
+.footer-heading img{
+    width: 10vw;
+    height: 70px;
+    /* background-color: black; */
+    margin-left: 5%;
+}
+.footer-heading  h2{
+    font: 7rem;
+    font-family: "Black Ops One", system-ui;
+    color: #FFFFFF;
+    margin-left: 5%;
+}
+.footer-links{
+    width:30vw;
+    height: 20vh;
+    /* background-color: aqua; */
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.footer-links h1{
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    padding-left: 19%;
+    font-weight: 400;
+}
+
+
+.footer-links ul{
+    list-style: none;
+    display: flex;
+}
+
+.footer-links ul li img{
+    width: 35px;
+    height: 35px;
+}
+
+.footer-links ul{
+    padding-left: 11rem;
+    gap: 10px;
+}
+
+.line{
+    width: 80%;
+    height: 2px;
+    background-color: aliceblue;
+    margin: auto;
+}
+
+.copywrite{
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+@media (max-width: 1099px){
+
+    .navbar .ul .li{
+        font-size: 0.5rem;
+        display: none;
+    }
+
+    .search{
+        width: 15vw;
+        height: 4vh;
+        margin: 1%;
+        margin-right: 2.5%;
+    }
+
+    .hero-section{
+        height: 40vh;
+        position: relative;
+    }
+
+    .hero-heading{
+        margin-top: 10%;
+        font-size: 4rem;
+    }
+
+    .hero-heading2{
+        font-size: 3rem;
+    }
+    .tagline{
+        font-size: 0.7rem;
+    }
+
+    .join-btn{
+        width: 10vw;
+        height: 3vh;
+        border-radius: 5px;
+        margin-left: 20%;
+        margin-top: 0.5%;
+        height: 2.5vh;
+    }
+
+    .section-2{
+        height: 35vh;
+    }
+
+    .container{
+        height: 22vh;
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .card{
+        height: 30vh;
+        width: 40vw;
+    }
+
+    .visual{
+        padding-top: 10%;
+        font-size: 4rem;
+        height: 6vh;
+    }
+    .info h1{
+       font-size: 0.8rem;
+       padding-top: 10%;
+    }
+    .info p{
+        padding-top: 5%;
+    }
+    .section-3{
+        height: 80vh;
+        
+    }
+    .section-3 .container2{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .section-3 .detail{
+        width: 80vw;
+        margin-top: 2%;
+        height: 40vh;
+    }
+
+    .container2 .detail h1{
+        padding-top:0;
+    }
+
+    .section-3 .images{
+        width: 63vw;
+        height: 45vh;
+        padding-top: 10%;
+    }
+
+    .section-3 .images .item{
+        height: 20vh;
+        width: 30vw;
+    }
+
+    .section4{
+        height: 100vh;
+    }
+
+    .section4 h1{
+        padding-top: 15%;
+    }
+
+    .section4 .container3{
+        height: 70vh;
+        margin-left: 10%;
+    }
+
+    .container3 .card-container{
+        height: 70vh;
+        width: 80vw;
+        
+    }
+
+    .card-container .event{
+        height: 30vh;
+    }
+
+    .card-container .button button{
+        margin-left:30%;
+    }
+    
+    .prev{
+        width: 10vw;
+        height: 3vh;
+        margin-left: 25%;
+    }
+
+    .next{
+        width: 10vw;
+        height: 3vh;
+    }
+
+    .section5{
+        height: 100vh;
+    }
+
+    .section5 h1{
+        font-size: 6rem;
+    }
+    .team1{
+        height: 30vh;
+        gap: 10px;
+
+    }
+
+    .team2{
+        height: 30vh;
+        gap: 10px;
+    }
+    .mem{
+    
+        width: 30vw;
+        height:25vh;
+    }
+    .mem .profile{
+        height: 10vh;
+        width: 23vw;
+        font-size: 7rem;
+        left: 12px;
+        top:-60px;
+    }
+
+    .mem-info .name{
+            padding-top: 15%;
+    }
+
+
+    .section6{
+        height: 45vh;
+    }
+
+    .section6 .feedback
+    {
+        height: 20vh;
+    }
+
+    .section6 .feedback h1{
+        font-size: 3rem;
+        line-height: 2.7rem;
+    }
+
+    form{
+        height: 30vh;
+        width: 30vw;
+        padding-left: 3%;
+    }
+
+    form input{
+        height: 2vh;
+        border-radius: 5px;
+    }
+
+    form label{
+        font-family: 0.3rem;
+    }
+
+    form button{
+        height: 2vh;
+    }
+
+    footer{
+        height: 20vh;
+    }
+    .footer{
+        height: 10vh;
+    }
+    .footer-heading{
+        height: 7vh;
+    }
+    .footer-links{
+        margin-left: 0%;
+        margin-right: 3%;
+        width: 30vw;
+        height: 8vh;
+        margin-top: 10%;
+    }
+
+    .footer-links h1{
+        padding-left: 0%;
+    }
+
+    .footer ul{
+        padding-left: 30%;
+    }
+
+    .footer ul li img{
+        width: 20px;
+        height: 20px;
+    }
+
+    footer .line{
+        height: 2px;
+        margin-top: 5rem;
+    }
+}
+
+
+@media (max-width: 640px){
+
+    body{
+        overflow-x: hidden;
+    }
+    .navbar .ul .li{
+        font-size: 0.5rem;
+        display: none;
+    }
+
+    .search{
+        width: 15vw;
+        height: 4vh;
+        margin: 1%;
+        margin-right: 2.5%;
+    }
+
+    .hero-section{
+        height: 30vh;
+        position: relative;
+        width: 100%;
+    }
+
+    .hero-heading{
+        margin-top: 20%;
+        font-size: 1rem;
+    }
+    .hero-heading2{
+        font-size: 1rem;
+    }
+    .tagline{
+        font-size: 0.5rem;
+        padding-right: 30%;
+    }
+
+    .join-btn{
+        width: 11vw;
+        height: 1vh;
+        border-radius: 5px;
+        margin-left: 20%;
+        margin-top: 0.5%;
+        height: 2.5vh;
+        font-size: 0.5rem;
+    }
+
+    .section-2{
+        height: 25vh;
+    }
+
+    .section-2 .heading3{
+        font-size: 2rem;
+    }
+    .container{
+        height: 20vh;
+        width: 90vw;
+        gap: 5px;
+    }
+
+    .card{
+        height: 15vh;
+        width: 40vw;
+    }
+
+    .visual{
+        padding-top: 5%;
+        font-size: 2rem;
+        height: 3vh;
+    }
+    .info h1{
+       font-size: 0.5rem;
+
+    }
+    .info p{
+        padding-top:5%;
+        font-size: 0.4rem;
+        line-height: 9px;
+    }
+    .section-3{
+        height: 45vh;
+        
+    }
+    .section-3 .container2{
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+    }
+
+    .section-3 .detail{
+        width: 80vw;
+        margin-top: 2%;
+        height: 20vh;
+    }
+
+    .container2 .detail h1{
+        padding-top:0;
+        font-size: 1rem;
+    }
+
+    .container2 .detail p{
+        font-size: 0.5rem;
+        line-height: 10px;
+    }
+    .section-3 .images{
+        width: 45vw;
+        height: 20vh;
+        padding-top: 2%;
+        margin-top: 10%;
+    }
+
+    .section-3 .images .item{
+        height: 10vh;
+        width: 20vw;
+    }
+
+    .section4{
+        height: 80vh;
+    }
+
+    .section4 h1{
+        padding-top: 30%;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .section4 .container3{
+        height: 50vh;
+        margin-left: 10%;
+    }
+
+    .container3 .card-container{
+        height: 50vh;
+        width: 80vw;
+        
+    }
+
+    .card-container .event{
+        height: 15vh;
+    }
+    .card-container .event:nth-child(3)
+    {
+        left: 40%;
+    }
+
+    .card-container .event:nth-child(4)
+    {
+        left: calc(40% + 50px);
+    }
+
+    .card-container .event:nth-child(5)
+    {
+        left: calc(40% + 100px);
+    }
+
+    .card-container .event:nth-child(n+6)
+    {
+        left: calc(40% + 150px);
+    }
+    .card-container .button button{
+        margin-left:30%;
+    }
+    
+    .prev{
+        width: 10vw;
+        height: 3vh;
+        margin-left: 25%;
+    }
+
+    .next{
+        width: 10vw;
+        height: 3vh;
+    }
+
+    .section5{
+        height: 80vh;
+    }
+
+    .section5 h1{
+        font-size: 6rem;
+    }
+    .team1{
+        height: 25vh;
+        gap: 10px;
+    }
+
+    .team2{
+        height: 20vh;
+        gap: 10px;
+    }
+    .mem{
+        width: 30vw;
+        height:25vh;
+    }
+    .mem .profile{
+        height: 4vh;
+        width: 23vw;
+        font-size: 4rem;
+        left: 5px;
+        top:-60px;
+        padding-top: 10%;
+    }
+
+    .mem-info .name{
+        padding-top: 7%;
+        font-size: 1rem;
+    }
+
+    .mem-info p{
+        font-size: 0.5rem;
+    }
+    .section6{
+        height: 60vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section6 .feedback
+    {
+        height: 20vh;
+        width: 80%;
+        margin-top: 46px;
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    .section6 .feedback h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    form{
+        height: 30vh;
+        width: 50vw;
+        padding-left: 7%;
+    }
+
+    form input{
+        height: 2vh;
+        border-radius: 5px;
+        width: 30vw;
+    }
+
+    form label{
+        font-size: 10px;
+    }
+
+    form button{
+        height: 2vh;
+        font-size: 7px;
+    }
+
+    #msg{
+        width: 30vw;
+    }
+    footer{
+        height: 15vh;
+    }
+    .footer{
+        height: 10vh;
+    }
+    .footer-heading{
+        height: 7vh;
+        margin-top: 5%;
+    }
+    .footer-heading img{
+        height: 3vh;
+    }
+    .footer-heading h2{
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+    .footer-links{
+        margin-left: 0%;
+        margin-right: 3%;
+        width: 30vw;
+        height: 8vh;
+        margin-top: 5%;
+    }
+
+    .footer-links h1{
+        padding-left: 0%;
+        font-size: 0.7rem;
+    }
+
+    .footer ul{
+        padding-left: 20%;
+    }
+
+    .footer ul li img{
+        width: 20px;
+        height: 20px;
+    }
+
+    footer .line{
+        height: 1px;
+        margin-top: 1rem;
+    }
+
+    .copywrite{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 1200px){
+
+    .navbar .ul .li{
+        font-size: 0.5rem;
+        display: none;
+    }
+
+    .search{
+        width: 15vw;
+        height: 4vh;
+        margin: 1%;
+        margin-right: 2.5%;
+    }
+
+    .hero-section{
+        height: 60vh;
+        position: relative;
+        width: 100%;
+    }
+
+    .hero-heading{
+        margin-top: 5%;
+        font-size: 4rem;
+    }
+
+    .hero-heading2{
+        font-size: 3rem;
+    }
+    .tagline{
+        font-size: 0.7rem;
+    }
+
+    .join-btn{
+        width: 10vw;
+        height: 5vh;
+        border-radius: 5px;
+        margin-left: 20%;
+        margin-top: 0.5%;
+        height: 2.5vh;
+        font-size: 0.6rem;
+    }
+
+    .section-2{
+        height: 40vh;
+    }
+
+    .container{
+        height: 30vh;
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .card{
+        height: 25vh;
+        width: 40vw;
+    }
+
+    .visual{
+        padding-top: 10%;
+        font-size: 4rem;
+        height: 6vh;
+    }
+    .info h1{
+       font-size: 0.8rem;
+       padding-top: 30%;
+       line-height: 15px;
+    }
+    .info p{
+        padding-top: 5%;
+        font-size: 0.5rem;
+    }
+    .section-3{
+        height: 90vh;
+        
+    }
+    .section-3 .container2{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .section-3 .detail{
+        width: 80vw;
+        margin-top: 2%;
+        height: 30vh;
+    }
+
+    .container2 .detail h1{
+        padding-top:0;
+        font-size: 1.5rem;
+    }
+
+    .container2 .detail p{
+        line-height: 15px;
+    }
+
+    .section-3 .images{
+        width: 50vw;
+        height: 45vh;
+        padding-top: 10%;
+        gap: 5px;
+
+    }
+
+    .section-3 .images .item{
+        height: 20vh;
+        width: 25vw;
+    }
+
+    .section4{
+        height: 110vh;
+    }
+
+    .section4 h1{
+        padding-top: 15%;
+    }
+
+    .section4 .container3{
+        height: 70vh;
+        margin-left: 10%;
+    }
+
+    .container3 .card-container{
+        height: 70vh;
+        width: 80vw;
+        
+    }
+
+    .card-container .event{
+        height: 30vh;
+    }
+
+    .card-container .button button{
+        margin-left:30%;
+    }
+    
+    .prev{
+        width: 10vw;
+        height: 3vh;
+        margin-left: 25%;
+    }
+
+    .next{
+        width: 10vw;
+        height: 3vh;
+    }
+
+    .section5{
+        height: 130vh;
+    }
+
+    .section5 h1{
+        font-size: 6rem;
+    }
+    .team1{
+        height: 35vh;
+        gap: 10px;
+        margin-top: 0%;
+        /* background-color: aqua; */
+
+    }
+
+    .team2{
+        height: 30vh;
+        gap: 10px;
+        margin-top: 9%;
+    }
+    .mem{
+    
+        width: 30vw;
+        height:25vh;
+    }
+    .mem .profile{
+        height: 20vh;
+        width: 15vw;
+        font-size: 5rem;
+        left: 17px;
+        top:-60px;
+    }
+
+    .mem-info .name{
+            padding-top: 5%;
+    }
+
+
+    .section6{
+        height: 60vh;
+
+    }
+
+    .section6 .feedback
+    {
+        height: 30vh;
+        width: 45vw;
+        /* background-color: aqua; */
+        margin-top: 4%;
+    }
+
+    .section6 .feedback h1{
+        font-size: 2rem;
+        line-height: 2.7rem;
+    }
+
+    .section6 .feedback p{
+        font-size: 0.8rem;
+    }
+    form{
+        height: 50vh;
+        width: 35vw;
+        padding-left: 5%;
+    }
+
+    form input{
+        height: 3vh;
+        border-radius: 2px;
+        width: 20vw;
+    }
+    #msg{
+        width: 20vw;
+    }
+    form label{
+        font-size: 0.7rem;
+    }
+
+    form button{
+        height: 4vh;
+        font-size: 0.7rem;
+    }
+
+    footer{
+        height: 30vh;
+    }
+    .footer{
+        height: 20vh;
+    }
+    .footer-heading{
+        height: 7vh;
+        margin-top: 5%;
+    }
+    .footer-heading img{
+        height: 7vh;
+    }
+    .footer-heading h2{
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+    .footer-links{
+        margin-left: 0%;
+        margin-right: 3%;
+        width: 30vw;
+        height: 8vh;
+        margin-top: 8%;
+    }
+
+    .footer-links h1{
+        padding-left: 0%;
+        font-size: 0.7rem;
+    }
+
+    .footer ul{
+        padding-left: 15%;
+    }
+
+    .footer ul li img{
+        width: 20px;
+        height: 20px;
+    }
+
+    footer .line{
+        height: 1px;
+        margin-top: 1rem;
+    }
+
+    .copywrite{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 1240px){
+
+    .navbar .ul .li{
+        font-size: 0.5rem;
+        display: none;
+    }
+
+    .hero-section{
+        height: 80vh;
+        position: relative;
+        width: 100%;
+    }
+
+    .hero-heading{
+        margin-top: 5%;
+        font-size: 5rem;
+    }
+
+    .hero-heading2{
+        font-size: 4rem;
+    }
+    .tagline{
+        font-size: 0.7rem;
+    }
+
+    .join-btn{
+        width: 10vw;
+        height: 6vh;
+        border-radius: 5px;
+        margin-left: 20%;
+        margin-top: 0.5%;
+        height: 2.5vh;
+        font-size: 0.6rem;
+    }
+
+    .section-2{
+        height: 45vh;
+    }
+
+    .container{
+        height: 30vh;
+        width: 90vw;
+        gap: 10px;
+    }
+
+    .card{
+        height: 30vh;
+        width: 40vw;
+    }
+
+    .visual{
+        padding-top: 10%;
+        font-size: 4rem;
+        height: 6vh;
+    }
+    .info h1{
+       font-size: 0.8rem;
+       padding-top: 30%;
+       line-height: 15px;
+    }
+    .info p{
+        padding-top: 5%;
+        font-size: 0.5rem;
+    }
+    .section-3{
+        height: 110vh;
+        
+    }
+    .section-3 .container2{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .section-3 .detail{
+        width: 80vw;
+        margin-top: 2%;
+        height: 20vh;
+    }
+
+    .container2 .detail h1{
+        padding-top:3%;
+        font-size: 3rem;
+    }
+
+    .container2 .detail p{
+        line-height: 15px;
+    }
+
+    .section-3 .images{
+        width: 50vw;
+        height: 45vh;
+        padding-top: 20%;
+        gap: 5px;
+
+    }
+
+    .section-3 .images .item{
+        height: 20vh;
+        width: 25vw;
+    }
+
+    .section4{
+        height: 120vh;
+    }
+
+    .section4 h1{
+        padding-top: 15%;
+    }
+
+    .section4 .container3{
+        height: 70vh;
+        margin-left: 10%;
+    }
+
+    .container3 .card-container{
+        height: 70vh;
+        width: 80vw;
+        
+    }
+
+    .card-container .event{
+        height: 30vh;
+    }
+
+    .card-container .button button{
+        margin-left:30%;
+    }
+    
+    .prev{
+        width: 10vw;
+        height: 3vh;
+        margin-left: 25%;
+    }
+
+    .next{
+        width: 10vw;
+        height: 3vh;
+    }
+
+    .section5{
+        height: 150vh;
+    }
+
+    .section5 h1{
+        font-size: 6rem;
+    }
+    .team1{
+        height: 35vh;
+        gap: 10px;
+        margin-top: 0%;
+        /* background-color: aqua; */
+
+    }
+
+    .team2{
+        height: 30vh;
+        gap: 10px;
+        margin-top: 9%;
+    }
+    .mem{
+    
+        width: 30vw;
+        height:25vh;
+    }
+    .mem .profile{
+        height: 20vh;
+        width: 15vw;
+        font-size: 5rem;
+        left: 60px;
+        top:-60px;
+    }
+
+    .mem-info .name{
+            padding-top: 2%;
+    }
+
+    .mem-info{
+        margin-top: 30%;
+    }
+
+    .section6{
+        height: 60vh;
+
+    }
+
+    .section6 .feedback
+    {
+        height: 30vh;
+        width: 45vw;
+        /* background-color: aqua; */
+        margin-top: 4%;
+    }
+
+    .section6 .feedback h1{
+        font-size: 2rem;
+        line-height: 2.7rem;
+    }
+
+    .section6 .feedback p{
+        font-size: 0.8rem;
+    }
+    form{
+        height: 50vh;
+        width: 35vw;
+        padding-left: 5%;
+    }
+
+    form input{
+        height: 3vh;
+        border-radius: 2px;
+        width: 20vw;
+    }
+    #msg{
+        width: 20vw;
+    }
+    form label{
+        font-size: 0.7rem;
+    }
+
+    form button{
+        height: 4vh;
+        font-size: 0.7rem;
+    }
+
+    footer{
+        height: 30vh;
+    }
+    .footer{
+        height: 20vh;
+    }
+    .footer-heading{
+        height: 7vh;
+        margin-top: 5%;
+    }
+    .footer-heading img{
+        height: 7vh;
+    }
+    .footer-heading h2{
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+    .footer-links{
+        margin-left: 0%;
+        margin-right: 3%;
+        width: 30vw;
+        height: 8vh;
+        margin-top: 8%;
+    }
+
+    .footer-links h1{
+        padding-left: 0%;
+        font-size: 0.7rem;
+    }
+
+    .footer ul{
+        padding-left: 15%;
+    }
+
+    .footer ul li img{
+        width: 20px;
+        height: 20px;
+    }
+
+    footer .line{
+        height: 1px;
+        margin-top: 1rem;
+    }
+
+    .copywrite{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 900px)
+{   
+    .navbar ul li{
+        display: none;
+    }
+    .section-3{
+        height: 110vh;
+        
+    }
+    .section-3 .container2{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .section-3 .detail{
+        width: 80vw;
+        margin-top: 2%;
+        height: 20vh;
+    }
+
+    .container2 .detail h1{
+        padding-top:3%;
+        font-size: 2rem;
+    }
+
+    .container2 .detail p{
+        line-height: 15px;
+        font-size: 0.7rem;
+    }
+
+    .section-3 .images{
+        width: 50vw;
+        height: 45vh;
+        padding-top: 20%;
+        gap: 5px;
+
+    }
+
+    .section-3 .images .item{
+        height: 20vh;
+        width: 25vw;
+    }
+
+    .mem{
+    
+        width: 30vw;
+        height:25vh;
+    }
+    .mem .profile{
+        height: 15vh;
+        width: 15vw;
+        font-size: 4rem;
+        left: 40px;
+        top:-60px;
+    }
+}
+
+@media (max-width: 730px)
+{   
+    .navbar ul li{
+        display: none;
+    }
+    .section-3{
+        height: 110vh;
+        
+    }
+    .section-3 .container2{
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .section-3 .detail{
+        width: 80vw;
+        margin-top: 2%;
+        height: 30vh;
+    }
+
+    .container2 .detail h1{
+        padding-top:3%;
+        font-size: 2rem;
+    }
+
+    .container2 .detail p{
+        line-height: 15px;
+        font-size: 0.6rem;
+    }
+
+    .section-3 .images{
+        width: 50vw;
+        height: 45vh;
+        padding-top: 25%;
+        gap: 5px;
+
+    }
+
+    .section-3 .images .item{
+        height: 20vh;
+        width: 25vw;
+    }
+
+    .mem .profile{
+        height: 15vh;
+    }
+}
+
+@media (max-width:1250px)
+{
+    .navbar ul li{
+        display: none;
+    }
+    .logo{
+        margin-right: 45%;
+    }
+
+    .search{
+        margin-right: 20%;
+        margin-top: 0.3%;
+        width: 25vw;
+    }
+
+    .navigation{
+        display: block;
+    }
+}
